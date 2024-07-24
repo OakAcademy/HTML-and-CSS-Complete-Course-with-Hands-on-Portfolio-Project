@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+      .grid-wrapper {
+        background-color: grey;
+        margin: 50px;
+        height: 500px;
+        grid-template-columns: repeat(3, 1fr);
+        display: grid;
+        /* grid-template-columns: 1fr 1fr auto; */
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        grid-template-rows: 1fr 1fr 1fr;
+        /* grid-template-rows: 200px 150px 70px; */
+        /* gap: 10px; */
+        column-gap: 30px;
+        row-gap: 10px;
+      }
+
+      .el-1 {
+        background-color: red;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .el-1 img {
+        width: 50px;
+        height: 60px;
+      }
+      .el-2 {
+        background-color: blue;
+      }
+      .el-3 {
+        background-color: greenyellow;
+      }
+      .el-4 {
+        background-color: orange;
+      }
+      .el-5 {
+        background-color: red;
+      }
+      .el-6 {
+        background-color: orangered;
+        grid-column: 1/2;
+        grid-row: 3;
+      }
+      .el-7 {
+        background-color: blueviolet;
+      }
+      .el-8 {
+        background-color: burlywood;
+      }
+      .el-9 {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-wrapper">
+      <div class="el el-1">
+        <img src="image-1.png" alt="image" />
+        <section>
+          <h3>Test</h3>
+          <p>ksjs</p>
+        </section>
+      </div>
+      <div class="el el-2">CSS</div>
+      <div class="el el-3">Element</div>
+      <div class="el el-4">Language</div>
+      <div class="el el-5">GRİD</div>
+      <div class="el el-6">Flexbox</div>
+      <div class="el el-7">gap</div>
+      <div class="el el-8">Lorem</div>
+      <div class="el el-9">test</div>
+
+      <!-- <div class="flex-wrapper">
+        <div class="el el-1">HTML</div>
+        <div class="el el-2">CSS</div>
+        <div class="el-3 el">Element</div>
+        <div class="el-4 el">Language</div>
+      </div> -->
+    </div>
+    <div>
+      <a href="index.html">Go Home</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+  </head>
+  <body>
+    <form>
+      <h3>Contact Information</h3>
+      <div>
+        <section>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter a Name"
+            required
+            name="name"
+          />
+        </section>
+        <br />
+
+        <section>
+          <label for="surname">Surname:</label>
+          <input
+            type="text"
+            id="surname"
+            placeholder="Enter a Surname"
+            name="surname"
+          />
+        </section>
+        <br />
+        <section>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder="abc@gmail.com"
+            name="email"
+          />
+        </section>
+      </div>
+      <h3>Language</h3>
+      <div>
+        <section>
+          <input type="checkbox" id="en" name="language" value="English" />
+          <label for="en">English</label>
+        </section>
+        <section>
+          <input type="checkbox" id="de" name="language" value="German" />
+          <label for="de">German</label>
+        </section>
+        <section>
+          <input type="checkbox" id="fr" name="language" value="France" />
+          <label for="fr">France</label>
+        </section>
+      </div>
+      <h3>Gender</h3>
+      <div>
+        <section>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+        </section>
+        <section>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+        </section>
+        <section>
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other">Other</label>
+        </section>
+      </div>
+      <h3>Country</h3>
+      <div>
+        <label for="country">Select Your Country</label>
+        <select name="country" id="country">
+          <option value="" selected disabled>Countries</option>
+          <option value="usa">America</option>
+          <option value="france">France</option>
+          <option value="germany">Germany</option>
+          <option value="turkey">Turkey</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="file">Select File</label>
+        <input type="file" id="file" name="file" />
+      </div>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

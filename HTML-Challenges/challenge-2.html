@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Veterinary Form</legend>
+        <h3>Information of the Animal Owner</h3>
+        <div>
+          <section>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Jhon"
+              required
+            />
+          </section>
+          <section>
+            <label for="surname">Surname:</label>
+            <input
+              type="text"
+              id="surname"
+              name="surname"
+              placeholder="Eltony"
+              required
+            />
+          </section>
+          <section>
+            <label for="phone">Phone:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="123-456-7890"
+              required
+            />
+          </section>
+        </div>
+        <div>
+          <h3>Gender</h3>
+          <section>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+          </section>
+          <section>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+          </section>
+        </div>
+        <div>
+          <h3>Detailed Disease Description</h3>
+
+          <textarea
+            name="message"
+            placeholder="Write the description here..."
+            required
+            cols="50"
+            rows="10"
+          ></textarea>
+        </div>
+        <button>Submit</button>
+      </fieldset>
+    </form>
+    <a href="index.html"> Go Home</a>
+  </body>
+</html>

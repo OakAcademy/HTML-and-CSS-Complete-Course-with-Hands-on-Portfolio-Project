@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  font-family: sans-serif;
+}
+main {
+  position: relative;
+}
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,
+h2,
+h4 {
+  color: rgb(224, 14, 14);
+}
+.top-p {
+  border: 2px solid red;
+  width: 150px;
+  padding: 10px;
+}
+.top-image {
+  width: 250px;
+  height: auto;
+}
+.main-header {
+  background-color: #f3ebeb;
+  border-bottom: 3px solid grey;
+  padding: 10px;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.first-header {
+  text-align: center;
+  font-size: 30px;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-left: 10px;
+}
+li {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+li:first-child {
+  margin-top: 0;
+}
+/* footer p {
+  font-size: 10px;
+} */
+/* section article p {
+  color: red;
+} */
+.test {
+  color: red;
+}
+#copyright {
+  font-size: 15px;
+  font-style: italic;
+}
+.footer {
+  border-top: 3px solid grey;
+  padding: 20px;
+  text-align: center;
+}
+.footer p {
+  margin-top: 0;
+  margin-left: 0;
+}
+/* Children's Pseudo-classes */
+/* li:first-child {
+  color: red;
+}
+li:last-child {
+  background-color: aqua;
+} */
+/* li:nth-child(even) {
+  color: red;
+} */
+/* section p:first-child {
+  color: red;
+} */
+/* Hyperlinks Class */
+a:link {
+  color: red;
+  text-decoration: none;
+}
+a:visited {
+  color: #1098ab;
+}
+a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+a:active {
+  background-color: black;
+  color: red;
+}
+nav a {
+  margin: 20px 10px;
+  display: inline-block;
+}
+.a-wrapper {
+  margin: 20px 0;
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 100px;
+  padding: 10px;
+  position: fixed;
+  /* top: 100px;
+  left: 100px; */
+  bottom: 100px;
+  right: 100px;
+  text-align: center;
+  background-color: rgb(151, 146, 146);
+  
+  
+}
+.a-wrapper a{
+  color: white;
+}
+.a-wrapper:hover{
+box-shadow: 1px 3px 3px 1px;
+cursor: pointer;
+}
+
+img {
+  margin: 20px 0;
+}
+p {
+  margin-top: 20px;
+}
+/* .fixed {
+  border: 3px solid green;
+  background-color: greenyellow;
+  margin: 0;
+  padding: 10px;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+}
+.sticky {
+  border: 2px solid red;
+  background-color: orange;
+  position: sticky;
+  top: 100px;
+}
+.sticky-header {
+  border: 1px solid red;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+} 
+ .first-a {
+  border: 3px solid red;
+  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding: 10px 20px 30px 40px;
+  background-color: black;
+  margin: 20px 40px;
+}
+.second-a {
+  border: 3px solid red;
+} 

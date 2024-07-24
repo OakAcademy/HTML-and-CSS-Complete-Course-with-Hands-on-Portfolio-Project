@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
+.menu {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.hamburger {
+  display: none;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+.last {
+  display: none;
+}
+
+.transform {
+  border: 1px solid red;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  color: #333;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 3s ease-in-out;
+}
+button:hover {
+  box-shadow: 1px 3px 3px 1px;
+  /* transform: matrix(1.2, 0, 0, 1.2, 100, 100); */
+  transform: translateY(-50px);
+  /* transform: scale(0.5); */
+  /* transform: rotate(180deg); */
+}
+
+@media screen and (max-width: 575px) {
+  .hamburger {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+  }
+}
+.slide-wrapper a,
+p {
+  color: #333;
+}
+.slide-wrapper {
+  width: 130px;
+  display: flex;
+  gap: 20px;
+  transform: translateX(-70px);
+  transition: all 2s ease-in-out;
+}
+.slide-wrapper:hover {
+  transform: translateX(0);
+}
+.slide-wrapper ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.slide-wrapper ul li {
+  border-bottom: 1px solid grey;
+  margin-left: 10px;
+}
+.slide-wrapper ul li:hover {
+  transform: translateY(16px);
+  transform: scale(1.1);
+}
+
+.keyframes {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  /* animation-name: move;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards; */
+  animation: move 8s ease-in-out;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(200px);
+    background-color: blue;
+  }
+  50% {
+    transform: translate(200px, 200px);
+    background-color: bisque;
+    transform: rotate(45deg);
+  }
+  75% {
+    transform: translate(0, 200px);
+    background-color: aliceblue;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
